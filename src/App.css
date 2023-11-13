@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  text-align: center;
+  width: 10%;
+  background-color: rgb(86, 84, 84);
+  height: 100vh;
+  position: fixed;
+}
+
+.imgg {
+  width: 100%;
+}
+
+.img {
+  background-color: black;
+}
+
+.side {
+  padding: 2rem 0.3rem 0.3rem;
+}
+
+.side h5 {
+  margin-top: 5px;
+}
+
+.side:hover {
+  background-color: black;
+}
+
+.bod {
+  left: 8rem;
+  width: 90%;
+  position: relative;
+  padding: 2rem 6rem;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner_img {
+  width: 50%;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0px;
+}
+
+.banner h3 {
+  font-size: 1.5rem;
+}
+
+.banner_head {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.des {
+  color: rgb(184, 182, 182);
+  text-align: justify;
+}
+
+.desc_hr {
+  width: 34%;
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills_title {
+  font-size: 1.5rem;
+}
+
+.skill {
+  color: rgb(184, 182, 182);
+  width: 10%;
+}
+
+.skill:hover {
+  width: 50%;
+  color: white;
+}
+
+.resume {
+  margin-top: 3rem;
+}
+
+a button {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 1rem 1rem;
+  font-size: large;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-gap: 1rem;
+}
+
+.images img {
+  width: 100%;
+}
+
+.img_button {
+  text-align: center;
+}
+
+.work_hr {
+  width: 17%;
+  margin-top: 0px;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+.works h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.work {
+  margin-bottom: 4rem;
+  padding: 1rem 0px 0px;
+}
+
+.works {
+  margin-top: 8rem;
+}
+
+.work_title {
+  margin-bottom: 0px;
+}
+
+.contact_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.contact_title {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+}
+
+.contact_hr {
+  width: 15%;
+  margin-top: 0px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+}
+
+.cont p {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: rgb(184, 182, 182);
+}
+
+.contact {
+  margin-top: 10rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  height: 2rem;
+  padding: 0.4rem;
+  margin: 0.3rem;
+}
+
+.form textarea {
+  padding: 0.4rem;
+  margin: 0.3rem;
+}
+
+.footer img {
+  width: 5rem;
+}
+
+.success {
+  display: flex;
+  background-color: gray;
+  padding-left: 2rem;
+}
+
+.success p {
+  width: 95%;
+}
+
+.footer a {
+  color: gray;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer {
+  margin: 5rem 0rem;
+}
+
+.footer_logo {
+  background-color: rgb(111, 109, 109);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3rem;
+}
+
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    text-align: center;
+    width: 10%;
+    background-color: rgb(86, 84, 84);
+    height: 100%;
+    position: initial;
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bod {
+    left: 0rem;
+    width: 100%;
+    position: initial;
+    padding: 2rem 1rem;
+  }
+
+  .banner_img {
+    width: 90%;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+
+  .banner h3 {
+    font-size: 1rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .contact_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
   }
 }
