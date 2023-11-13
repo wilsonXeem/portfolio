@@ -8,11 +8,11 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 function Resume() {
   return (
     <div className="resume">
-      <button className="resume_button">
-        <a href={CV}>
+      <a href={CV}>
+        <button className="resume_button">
           <FontAwesomeIcon icon={faDownload} /> Download Resume
-        </a>
-      </button>
+        </button>
+      </a>
     </div>
   );
 }
