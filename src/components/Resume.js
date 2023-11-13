@@ -1,6 +1,6 @@
 import React from "react";
 
-import CV from "../data/Wilson Zimthamaha-CV.pdf";
+import CV from "../data/CV.pdf";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
