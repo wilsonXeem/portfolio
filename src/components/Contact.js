@@ -31,7 +31,7 @@ function Contact() {
           </div>
         </div>
         <div>
-          <h5>Email me directly</h5>
+          <h5 style={{color:"gray"}}>Send a direct mail!</h5>
           <Emailjs />
         </div>
       </div>

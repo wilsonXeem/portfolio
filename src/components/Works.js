@@ -1,4 +1,5 @@
 import React from "react";
+import ModalImage from "react-modal-image";
 
 import B1 from "../data/b1.png";
 import B2 from "../data/b2.png";
@@ -26,13 +27,12 @@ import F5 from "../data/f5.png";
 
 import G1 from "../data/g1.png";
 import G2 from "../data/g2.png";
-import G3 from "../data/g2.png";
 
 export default function Works() {
   const works = [
     {
       title: "Etiquette Pharmaceuticals Limited",
-      images: [G1, G2, G3],
+      images: [G1, G2],
       website: "https://etiquettepharmaceuticals.com/",
       github1: "",
       github2: "",
@@ -87,7 +87,12 @@ export default function Works() {
               <h3>{work.title}</h3>
               <div className="images">
                 {work.images.map((img, i) => (
-                  <img src={img} alt="img" key={i} />
+                  <ModalImage
+                    small={img}
+                    large={img}
+                    alt="img"
+                    key={i}
+                  />
                 ))}
               </div>
               <div className="img_button">
