@@ -1,6 +1,6 @@
 import React from "react";
 
-import ZIM from "../data/zim2.jpg";
+import ZIM from "../data/logo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
