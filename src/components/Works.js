@@ -28,8 +28,32 @@ import F5 from "../data/f5.png";
 import G1 from "../data/g1.png";
 import G2 from "../data/g2.png";
 
+import P1 from "../data/p1.png";
+import P2 from "../data/p2.png";
+import P3 from "../data/p3.png";
+import P4 from "../data/p4.png";
+
+import V1 from "../data/v1.png";
+import V2 from "../data/v2.png";
+import V3 from "../data/v3.png";
+import V4 from "../data/v4.png";
+
 export default function Works() {
   const works = [
+    {
+      title: "Pharmapool Synergy Solutions Nigeria Limited",
+      images: [P1, P2, P3, P4],
+      website: "https://www.pharmapoolng.com",
+      github1: "",
+      github2: "",
+    },
+    {
+      title: "AfriVacx Health Aid Foundation",
+      images: [V1, V2, V3, V4],
+      website: "https://afrivacx.org",
+      github1: "",
+      github2: "",
+    },
     {
       title: "Etiquette Pharmaceuticals Limited",
       images: [G1, G2],
@@ -38,18 +62,18 @@ export default function Works() {
       github2: "",
     },
     {
-      title: "Investment Site",
-      images: [F1, F2, F3, F4, F5],
-      website: "https://britishfx.vercel.app/",
-      github1: "https://github.com/wilsonXeem/Britishfx",
-      github2: "https://github.com/wilsonXeem/britishfx-server",
-    },
-    {
       title: "Beach Resort Site",
       images: [B1, B2, B3, B4],
       website: "https://beach-resort-one.vercel.app/",
       github1: "https://github.com/wilsonXeem/Beach-Resort",
       github2: "",
+    },
+    {
+      title: "Investment Site",
+      images: [F1, F2, F3, F4, F5],
+      website: "https://britishfx.vercel.app/",
+      github1: "https://github.com/wilsonXeem/Britishfx",
+      github2: "https://github.com/wilsonXeem/britishfx-server",
     },
     {
       title: "Computer Based Test site",
@@ -64,13 +88,6 @@ export default function Works() {
       website: "https://shop-automation.vercel.app/",
       github1: "https://github.com/wilsonXeem/shop-automation-ui",
       github2: "https://github.com/wilsonXeem/shop-automation-server",
-    },
-    {
-      title: "To Do App",
-      images: [E1, E2, E3],
-      website: "https://vercel.com/wilsonxeem/todolist",
-      github1: "https://github.com/wilsonXeem/todo-ui",
-      github2: "https://github.com/wilsonXeem/todo-server",
     },
   ];
 
@@ -87,12 +104,7 @@ export default function Works() {
               <h3>{work.title}</h3>
               <div className="images">
                 {work.images.map((img, i) => (
-                  <ModalImage
-                    small={img}
-                    large={img}
-                    alt="img"
-                    key={i}
-                  />
+                  <ModalImage small={img} large={img} alt="img" key={i} />
                 ))}
               </div>
               <div className="img_button">

@@ -16,7 +16,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="img">
-        <img src={ZIM} alt="ZIM" className="imgg" />
+        <h1 style={{color:"black", fontSize:"5rem", fontWeight:"bolder"}}>WZ</h1>
       </div>
       <HashLink smooth to="#banner">
         <div className="side">

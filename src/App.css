@@ -48,10 +48,10 @@ p {
 
 .banner {
   text-align: center;
-}
-
-.banner_img {
-  width: 50%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner h1 {
@@ -61,10 +61,6 @@ p {
 
 .banner h3 {
   font-size: 1.5rem;
-}
-
-.banner_head {
-  margin-bottom: 3rem;
 }
 
 .title {
@@ -78,7 +74,7 @@ p {
 }
 
 .desc_hr {
-  width: 45%;
+  width: 12%;
 }
 
 .skills {
@@ -91,12 +87,14 @@ p {
 
 .skill {
   color: rgb(184, 182, 182);
-  width: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.skill:hover {
-  width: 15%;
+.skill p:hover {
   color: white;
+  cursor: pointer;
 }
 
 .resume {
@@ -136,7 +134,7 @@ button:hover {
 }
 
 .work_hr {
-  width: 17%;
+  width: 12%;
   margin-top: 0px;
 }
 
@@ -174,7 +172,7 @@ hr {
 }
 
 .contact_hr {
-  width: 15%;
+  width: 12%;
   margin-top: 0px;
 }
 
@@ -309,7 +307,7 @@ hr {
   }
 
   .contact_hr {
-  width: 30%;
-  margin-top: 0px;
-}
+    width: 30%;
+    margin-top: 0px;
+  }
 }

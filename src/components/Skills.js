@@ -8,24 +8,21 @@ function Skills() {
     "Node.js",
     "Express.js",
     "MongoDB",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "Help Desk",
+    "LaTex",
+    "Industrial Pharmacy",
+    "Clinical Pharmacy",
   ];
   return (
     <div className="skills" id="skills">
-      <p className="skills_title">My Skills</p>
-      {skills.map((skill, i) => {
-        return (
-          <div className="skill">
-            <p>{skill}</p>
-            <div className="skill_hr">
-              <hr />
-            </div>
-          </div>
-        );
-      })}
+      <h1 className="work_title">My skills</h1>
+      <div className="work_hr">
+        <hr />
+      </div>
+      <div className="skill">
+        {skills.map((skill, i) => {
+          return <p>{skill}</p>;
+        })}
+      </div>
     </div>
   );
 }

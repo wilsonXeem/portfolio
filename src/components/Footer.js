@@ -30,9 +30,6 @@ function Footer() {
 
       <a href="/">
         <div className="foot">
-          <div className="footer_logo">
-            <img src={Logo} alt="" />
-          </div>
           AlgorizimCodes 2023.
         </div>
       </a>

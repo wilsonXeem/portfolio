@@ -3,22 +3,20 @@ import React from "react";
 function Description() {
   return (
     <div className="description" id="description">
-      <p className="title">Wilson Zimthamaha Bonkuru</p>
+      <p className="title">Objective</p>
       <div className="desc_hr">
         <hr />
       </div>
       <p className="des">
-        Gifted Technical support specialist and full stack Javascript developer
-        who just completed numerous, lucrative and labour intensive projects.
-        Highly skilled and educated. Looking for an opportunity to work for a
-        well-established organization that appreciates dedication and hard work.
-        Self motivated web developer with a high level of experience working on
-        multiple projects. Passionate and hard working with a penchant for
-        meeting deadlines. Interested in a role with a company that promotes
-        best practices and offers a wealth of customer projects. With the
-        understanding of Javascript and it’s libraries. Looking to join an
-        organization where the opportunity for growth and personal development
-        is embraced.{" "}
+        Hello, I’m Wilson Zimthamaha Bonkuru, a Full Stack JavaScript Developer
+        with a unique background as a licensed pharmacist. With expertise in the
+        MERN stack (MongoDB, Express, React, and Node.js), TypeScript, and
+        technical documentation in LaTeX, I bring a diverse skill set to every
+        project. My dual background in healthcare and technology allows me to
+        approach problem-solving with precision, focusing on solutions that meet
+        both technical and user-centered needs. Welcome to my portfolio—explore
+        my projects to see how I bring ideas to life through innovative,
+        reliable technology.
       </p>
     </div>
   );
