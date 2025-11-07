@@ -1,135 +1,132 @@
 import React from "react";
-import ModalImage from "react-modal-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 
 import B1 from "../data/b1.png";
-import B2 from "../data/b2.png";
-import B3 from "../data/b3.png";
-import B4 from "../data/b4.png";
-
 import C1 from "../data/c1.png";
-import C2 from "../data/c2.png";
-import C3 from "../data/c3.png";
-import C4 from "../data/c4.png";
-
 import D1 from "../data/d1.png";
-import D2 from "../data/d2.png";
-import D3 from "../data/d3.png";
-
-import E1 from "../data/e1.png";
-import E2 from "../data/e2.png";
-import E3 from "../data/e3.png";
-
 import F1 from "../data/f1.png";
-import F2 from "../data/f2.png";
-import F3 from "../data/f3.png";
-import F4 from "../data/f4.png";
-import F5 from "../data/f5.png";
-
 import G1 from "../data/g1.png";
-import G2 from "../data/g2.png";
-
 import P1 from "../data/p1.png";
-import P2 from "../data/p2.png";
-import P3 from "../data/p3.png";
-import P4 from "../data/p4.png";
-
 import V1 from "../data/v1.png";
-import V2 from "../data/v2.png";
-import V3 from "../data/v3.png";
-import V4 from "../data/v4.png";
 
 export default function Works() {
-  const works = [
+  const projects = [
     {
-      title: "Pharmapool Synergy Solutions Nigeria Limited",
-      images: [P1, P2, P3, P4],
+      title: "Pharmapool Synergy Solutions",
+      description: "Professional pharmaceutical company website with modern design and comprehensive service showcase.",
+      image: P1,
+      tech: ["React", "Node.js", "MongoDB"],
       website: "https://www.pharmapoolng.com",
-      github1: "",
-      github2: "",
+      category: "Healthcare"
     },
     {
-      title: "AfriVacx Health Aid Foundation",
-      images: [V1, V2, V3, V4],
+      title: "AfriVacx Health Foundation",
+      description: "Non-profit health organization platform promoting healthcare awareness and vaccination programs.",
+      image: V1,
+      tech: ["React", "Express", "CSS3"],
       website: "https://afrivacx.org",
-      github1: "",
-      github2: "",
+      category: "Healthcare"
     },
     {
-      title: "Etiquette Pharmaceuticals Limited",
-      images: [G1, G2],
+      title: "Etiquette Pharmaceuticals",
+      description: "Corporate website for pharmaceutical manufacturing company with product catalog and services.",
+      image: G1,
+      tech: ["React", "JavaScript", "CSS3"],
       website: "https://etiquettepharmaceuticals.com/",
-      github1: "",
-      github2: "",
+      category: "Healthcare"
     },
     {
-      title: "Beach Resort Site",
-      images: [B1, B2, B3, B4],
+      title: "Beach Resort Booking",
+      description: "Full-stack resort booking application with room management and reservation system.",
+      image: B1,
+      tech: ["React", "Context API", "CSS3"],
       website: "https://beach-resort-one.vercel.app/",
-      github1: "https://github.com/wilsonXeem/Beach-Resort",
-      github2: "",
+      github: "https://github.com/wilsonXeem/Beach-Resort",
+      category: "Web App"
     },
     {
-      title: "Investment Site",
-      images: [F1, F2, F3, F4, F5],
+      title: "Investment Platform",
+      description: "Financial investment platform with user dashboard, portfolio tracking, and secure transactions.",
+      image: F1,
+      tech: ["React", "Node.js", "MongoDB"],
       website: "https://britishfx.vercel.app/",
-      github1: "https://github.com/wilsonXeem/Britishfx",
-      github2: "https://github.com/wilsonXeem/britishfx-server",
+      github: "https://github.com/wilsonXeem/Britishfx",
+      category: "Fintech"
     },
     {
-      title: "Computer Based Test site",
-      images: [C1, C2, C3, C4],
+      title: "Computer Based Test System",
+      description: "Educational testing platform for pharmacy students with real-time scoring and analytics.",
+      image: C1,
+      tech: ["React", "Node.js", "Express"],
       website: "https://student-test-app.vercel.app/",
-      github1: "https://github.com/wilsonXeem/Pharm-Test-App.git",
-      github2: "",
+      github: "https://github.com/wilsonXeem/Pharm-Test-App.git",
+      category: "Education"
     },
     {
-      title: "Shop Transaction Sheet",
-      images: [D1, D2, D3],
+      title: "Shop Automation System",
+      description: "Business management system for inventory tracking, sales reporting, and transaction management.",
+      image: D1,
+      tech: ["React", "Node.js", "MongoDB"],
       website: "https://shop-automation.vercel.app/",
-      github1: "https://github.com/wilsonXeem/shop-automation-ui",
-      github2: "https://github.com/wilsonXeem/shop-automation-server",
+      github: "https://github.com/wilsonXeem/shop-automation-ui",
+      category: "Business"
     },
   ];
 
   return (
-    <div className="works" id="works">
-      <h1 className="work_title">My Works</h1>
-      <div className="work_hr">
-        <hr />
-      </div>
-      <div className="imgs">
-        {works.map((work, i) => {
-          return (
-            <div className="work">
-              <h3>{work.title}</h3>
-              <div className="images">
-                {work.images.map((img, i) => (
-                  <ModalImage small={img} large={img} alt="img" key={i} />
-                ))}
-              </div>
-              <div className="img_button">
-                <a href={work.website}>
-                  <button>Website</button>
-                </a>
-
-                {work.github1 !== "" ? (
-                  <a href={work.github1}>
-                    <button>GitHub(UI)</button>
+    <div className="works section" id="works">
+      <h2 className="section-title">Featured Projects</h2>
+      <p className="section-subtitle">
+        A showcase of my recent work in web development and healthcare technology
+      </p>
+      
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <div className="project-image-container">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="project-image"
+              />
+              <div className="project-overlay">
+                <div className="project-links">
+                  <a 
+                    href={project.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </a>
-                ) : (
-                  ""
-                )}
-                {work.github2 !== "" ? (
-                  <a href={work.github2}>
-                    <button>GitHub(Server)</button>
-                  </a>
-                ) : (
-                  ""
-                )}
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-          );
-        })}
+            
+            <div className="project-content">
+              <div className="project-category">{project.category}</div>
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              
+              <div className="project-tech">
+                {project.tech.map((tech, i) => (
+                  <span key={i} className="tech-tag">{tech}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

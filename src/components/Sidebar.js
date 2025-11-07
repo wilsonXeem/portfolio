@@ -1,48 +1,73 @@
-import React from "react";
-
-import ZIM from "../data/logo.png";
-
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouseChimney,
   faUserTie,
   faEye,
   faEnvelope,
+  faBars,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-
 import { HashLink } from "react-router-hash-link";
 
 function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="sidebar">
-      <div className="img">
-        <h1 style={{color:"black", fontSize:"5rem", fontWeight:"bolder"}}>WZ</h1>
+    <>
+      <button className="mobile-menu-toggle" onClick={toggleSidebar}>
+        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+      </button>
+      
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <div className="img">
+          <h1>WZ</h1>
+        </div>
+        
+        <HashLink smooth to="#banner" onClick={closeSidebar}>
+          <div className="side">
+            <FontAwesomeIcon icon={faHouseChimney} fontSize="1.2rem" />
+            <h5>HOME</h5>
+          </div>
+        </HashLink>
+        
+        <HashLink smooth to="#description" onClick={closeSidebar}>
+          <div className="side">
+            <FontAwesomeIcon icon={faUserTie} fontSize="1.2rem" />
+            <h5>ABOUT</h5>
+          </div>
+        </HashLink>
+        
+        <HashLink smooth to="#skills" onClick={closeSidebar}>
+          <div className="side">
+            <FontAwesomeIcon icon={faEye} fontSize="1.2rem" />
+            <h5>SKILLS</h5>
+          </div>
+        </HashLink>
+        
+        <HashLink smooth to="#works" onClick={closeSidebar}>
+          <div className="side">
+            <FontAwesomeIcon icon={faEye} fontSize="1.2rem" />
+            <h5>WORKS</h5>
+          </div>
+        </HashLink>
+        
+        <HashLink smooth to="#contact" onClick={closeSidebar}>
+          <div className="side">
+            <FontAwesomeIcon icon={faEnvelope} fontSize="1.2rem" />
+            <h5>CONTACT</h5>
+          </div>
+        </HashLink>
       </div>
-      <HashLink smooth to="#banner">
-        <div className="side">
-          <FontAwesomeIcon icon={faHouseChimney} fontSize="2rem" />
-          <h5>HOME</h5>
-        </div>
-      </HashLink>
-      <HashLink smooth to="#description">
-        <div className="side">
-          <FontAwesomeIcon icon={faUserTie} fontSize="2rem" />
-          <h5>ABOUT</h5>
-        </div>
-      </HashLink>
-      <HashLink smooth to="#works">
-        <div className="side">
-          <FontAwesomeIcon icon={faEye} fontSize="2rem" />
-          <h5>WORKS</h5>
-        </div>
-      </HashLink>
-      <HashLink smooth to="#contact">
-        <div className="side">
-          <FontAwesomeIcon icon={faEnvelope} fontSize="2rem" />
-          <h5>CONTACT</h5>
-        </div>
-      </HashLink>
-    </div>
+    </>
   );
 }
 
