@@ -8,7 +8,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Logo from "../data/logo.png";
+
 
 function Footer() {
   return (
