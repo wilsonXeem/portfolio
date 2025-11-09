@@ -13,7 +13,14 @@ import Logo from "../data/logo.png";
 function Footer() {
   return (
     <div className="footer" id="footer">
-      <div style={{ marginBottom: "2rem" }}>
+      <div
+        style={{
+          marginBottom: "2rem",
+          display: "flex",
+          justifyContent: "center",
+          gap: "2rem",
+        }}
+      >
         <a href="https://wa.me/2349033782254">
           <FontAwesomeIcon icon={faWhatsapp} fontSize={50} />
         </a>
@@ -29,9 +36,7 @@ function Footer() {
       </div>
 
       <a href="/">
-        <div className="foot">
-          AlgorizimCodes 2023.
-        </div>
+        <div className="foot">ProgrammoCeuticals 2025.</div>
       </a>
     </div>
   );
