@@ -5,6 +5,7 @@ function Skills() {
 
   const skillCategories = {
     "Frontend Development": [
+      { name: "AngularJS", level: 85 },
       { name: "React.js", level: 90 },
       { name: "JavaScript", level: 85 },
       { name: "TypeScript", level: 80 },
@@ -52,7 +53,6 @@ function Skills() {
               <div key={index} className="skill-item">
                 <div className="skill-name">
                   <span>{skill.name}</span>
-                  <span>{skill.level}%</span>
                 </div>
                 <div className="skill-bar">
                   <div 
