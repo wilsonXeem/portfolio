@@ -4,10 +4,12 @@ import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 
 import B1 from "../data/b1.png";
 import C1 from "../data/c1.png";
+import CloNG from "../data/clong.png";
 import D1 from "../data/d1.png";
 import F1 from "../data/f1.png";
 import G1 from "../data/g1.png";
 import P1 from "../data/p1.png";
+import Result from "../data/result.png";
 import V1 from "../data/v1.png";
 
 export default function Works() {
@@ -71,6 +73,22 @@ export default function Works() {
       website: "https://shop-automation.vercel.app/",
       github: "https://github.com/wilsonXeem/shop-automation-ui",
       category: "Business"
+    },
+    {
+      title: "CloNG Website",
+      description: "NGO website built with modern technologies to support community outreach and organizational goals.",
+      image: CloNG,
+      tech: ["Angular", "Node.js", "Express", "TypeScript", "Drizzle", "PostgreSQL"],
+      website: "https://clong.vercel.app",
+      category: "NGO"
+    },
+    {
+      title: "Faculty Result Management System",
+      description: "Result management site for academic institutions with comprehensive student performance tracking and reporting.",
+      image: Result,
+      tech: ["React", "Node.js", "Express", "MongoDB"],
+      github: "https://github.com/wilsonXeem/school_results_management_system_ui",
+      category: "School management site"
     },
   ];
 
