@@ -15,27 +15,19 @@ import V1 from "../data/v1.png";
 export default function Works() {
   const projects = [
     {
+      title: "CloNG Website",
+      description: "NGO website built with modern technologies to support community outreach and organizational goals.",
+      image: CloNG,
+      tech: ["Angular", "Node.js", "Express", "TypeScript", "Drizzle", "PostgreSQL"],
+      website: "https://clongproject.org",
+      category: "NGO"
+    },
+    {
       title: "Pharmapool Synergy Solutions",
       description: "Professional pharmaceutical company website with modern design and comprehensive service showcase.",
       image: P1,
       tech: ["React", "Node.js", "MongoDB"],
       website: "https://www.pharmapoolng.com",
-      category: "Healthcare"
-    },
-    {
-      title: "AfriVacx Health Foundation",
-      description: "Non-profit health organization platform promoting healthcare awareness and vaccination programs.",
-      image: V1,
-      tech: ["React", "Express", "CSS3"],
-      website: "https://afrivacx.org",
-      category: "Healthcare"
-    },
-    {
-      title: "Etiquette Pharmaceuticals",
-      description: "Corporate website for pharmaceutical manufacturing company with product catalog and services.",
-      image: G1,
-      tech: ["React", "JavaScript", "CSS3"],
-      website: "https://etiquettepharmaceuticals.com/",
       category: "Healthcare"
     },
     {
@@ -48,13 +40,12 @@ export default function Works() {
       category: "Web App"
     },
     {
-      title: "Investment Platform",
-      description: "Financial investment platform with user dashboard, portfolio tracking, and secure transactions.",
-      image: F1,
-      tech: ["React", "Node.js", "MongoDB"],
-      website: "https://britishfx.vercel.app/",
-      github: "https://github.com/wilsonXeem/Britishfx",
-      category: "Fintech"
+      title: "Etiquette Pharmaceuticals",
+      description: "Corporate website for pharmaceutical manufacturing company with product catalog and services.",
+      image: G1,
+      tech: ["React", "JavaScript", "CSS3"],
+      website: "https://etiquettepharmaceuticals.com/",
+      category: "Healthcare"
     },
     {
       title: "Computer Based Test System",
@@ -66,21 +57,12 @@ export default function Works() {
       category: "Education"
     },
     {
-      title: "Shop Automation System",
-      description: "Business management system for inventory tracking, sales reporting, and transaction management.",
-      image: D1,
-      tech: ["React", "Node.js", "MongoDB"],
-      website: "https://shop-automation.vercel.app/",
-      github: "https://github.com/wilsonXeem/shop-automation-ui",
-      category: "Business"
-    },
-    {
-      title: "CloNG Website",
-      description: "NGO website built with modern technologies to support community outreach and organizational goals.",
-      image: CloNG,
-      tech: ["Angular", "Node.js", "Express", "TypeScript", "Drizzle", "PostgreSQL"],
-      website: "https://clong.vercel.app",
-      category: "NGO"
+      title: "AfriVacx Health Foundation",
+      description: "Non-profit health organization platform promoting healthcare awareness and vaccination programs.",
+      image: V1,
+      tech: ["React", "Express", "CSS3"],
+      website: "https://afrivacx.org",
+      category: "Healthcare"
     },
     {
       title: "Faculty Result Management System",
@@ -89,6 +71,24 @@ export default function Works() {
       tech: ["React", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/wilsonXeem/school_results_management_system_ui",
       category: "School management site"
+    },
+    {
+      title: "Investment Platform",
+      description: "Financial investment platform with user dashboard, portfolio tracking, and secure transactions.",
+      image: F1,
+      tech: ["React", "Node.js", "MongoDB"],
+      website: "https://britishfx.vercel.app/",
+      github: "https://github.com/wilsonXeem/Britishfx",
+      category: "Fintech"
+    },
+    {
+      title: "Shop Automation System",
+      description: "Business management system for inventory tracking, sales reporting, and transaction management.",
+      image: D1,
+      tech: ["React", "Node.js", "MongoDB"],
+      website: "https://shop-automation.vercel.app/",
+      github: "https://github.com/wilsonXeem/shop-automation-ui",
+      category: "Business"
     },
   ];
 
